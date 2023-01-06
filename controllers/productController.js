@@ -19,7 +19,8 @@ const addProduct = async (req, res) => {
     }
 
     console.log(JSON.stringify(info))
-    console.log(Product);
+    //console.log(Product);
+    
 
     const product = await Product.create(info)
     res.status(200).send(product)
